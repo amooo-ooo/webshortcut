@@ -15,10 +15,10 @@ python main.py --add_shortcut=<keys> --shortcut_url=<web_url>
 
 Here is an example:
 ```shell
-python main.py --add_shortcut=ctrl,shift,alt,g --shortcut_url="www.google.com"
+python main.py --add_shortcut=ctrl,shift,alt,g --shortcut_url="https://github.com/"
 ```
 
-This will set up a global hotkey 'Ctrl + Shift + Alt + G' to open Google in your default browser. 
+This will set up a global hotkey 'Ctrl + Shift + Alt + G' to open GitHub in your default browser. 
 
 ## Examples
 

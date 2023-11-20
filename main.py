@@ -40,13 +40,13 @@ def main():
 
     def on_press(key):
         current_keys.add(key)
-        for combination, url in shortcuts.items():
-            if combination.issubset(current_keys):
-                webbrowser.open_new_tab(url)
 
     def on_release(key):
         if key in current_keys:
             current_keys.remove(key)
+        for combination, url in shortcuts.items():
+            if combination.issubset(current_keys):
+                webbrowser.open_new_tab(url)
 
     with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
         listener.join()
